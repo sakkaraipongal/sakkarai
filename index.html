@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakkarai Pongal | Personal Portfolio</title>
+    <meta name="description" content="Professional portfolio of Sathish - Student, Web Developer, and Data Analyst. Highlighting web development projects, data visualizations, education, and experience.">
+    <meta name="keywords" content="Portfolio, Web Developer, Data Analyst, Student, HTML, CSS, JavaScript, React, Python, Big Data, SQL">
+    <meta name="author" content="Sathish">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sakkarai Pongal | Personal Portfolio">
+    <meta property="og:description" content="Explore my projects, skills, education, and certifications in web development and data analytics.">
+    <meta property="og:image" content="assets/profile.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Sakkarai Pongal | Personal Portfolio">
+    <meta property="twitter:description" content="Explore my projects, skills, education, and certifications in web development and data analytics.">
+    <meta property="twitter:image" content="assets/profile.jpg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="dark">
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Sticky Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="#hero">
+                <span class="brand-text">Sakkarai<span class="gradient-text"> Pongal</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education & Exp</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <!-- Theme Toggle Switch -->
+                    <li class="nav-item ms-lg-3">
+                        <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle Theme">
+                            <i class="fa-solid fa-moon dark-icon"></i>
+                            <i class="fa-solid fa-sun light-icon d-none"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section d-flex align-items-center position-relative overflow-hidden">
+        <!-- Floating bubbles design background -->
+        <div class="bubble-bg">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+        
+        <div class="container position-relative z-2">
+            <div class="row align-items-center min-vh-100 py-5">
+                <div class="col-lg-6 text-center text-lg-start hero-content order-2 order-lg-1">
+                    <span class="subtitle-badge mb-3 d-inline-block">Welcome to my Portfolio</span>
+                    <h1 class="display-3 fw-bold mb-2">Hi, I'm <span class="gradient-text">Sathish</span></h1>
+                    <h2 class="h3 fw-semibold mb-4 text-muted">
+                        I am a <span class="typing-text" id="typed-text"></span><span class="cursor">&nbsp;</span>
+                    </h2>
+                    <p class="lead mb-4 text-secondary">
+                        A passionate computer science student specializing in building clean, responsive user interfaces and deriving actionable insights from big data.
+                    </p>
+                    <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3 mb-5">
+                        <a href="assets/resume.pdf" download="Sathish_Resume.pdf" class="btn btn-gradient btn-lg">
+                            <i class="fa-solid fa-download me-2"></i>Download Resume
+                        </a>
+                        <a href="#contact" class="btn btn-outline btn-lg">
+                            <i class="fa-solid fa-paper-plane me-2"></i>Contact Me
+                        </a>
+                    </div>
+                    <div class="social-links d-flex justify-content-center justify-content-lg-start gap-3">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:sathish123@gmail.com" class="social-icon" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center order-1 order-lg-2 mb-5 mb-lg-0">
+                    <div class="profile-img-container">
+                        <div class="profile-img-glow"></div>
+                        <img src="assets/profile.jpg" alt="Sathish" class="img-fluid rounded-circle profile-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Down indicator -->
+        <a href="#about" class="scroll-down" aria-label="Scroll Down">
+            <i class="fa-solid fa-chevron-down bouncing-arrow"></i>
+        </a>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0 scroll-reveal">
+                    <div class="about-image-card">
+                        <div class="about-card-glow"></div>
+                        <div class="stats-counter-grid d-grid gap-3">
+                            <div class="stat-card">
+                                <h3 class="stat-num" data-target="15">0</h3>
+                                <p class="stat-label">Projects Done</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3 class="stat-num" data-target="500">0</h3>
+                                <p class="stat-label">Hours Coded</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3 class="stat-num" data-target="10">0</h3>
+                                <p class="stat-label">Certifications</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3 class="stat-num" data-target="4">0</h3>
+                                <p class="stat-label">Hackathons Won</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 ps-lg-5 scroll-reveal">
+                    <div class="section-title mb-4">
+                        <span class="subtitle-badge mb-2">Get to Know Me</span>
+                        <h2 class="display-5 fw-bold">About <span class="gradient-text">Me</span></h2>
+                    </div>
+                    <p class="about-text lead text-secondary mb-4">
+                        Hello! I am a final-year Computer Science student, enthusiastic about modern web development and data analytics. I enjoy bridging the gap between design and development by turning complex requirements into beautiful, structured, and performant web products.
+                    </p>
+                    <p class="about-text text-secondary mb-4">
+                        With a solid foundation in programming and databases, I have worked on web applications, API integrations, and big data analysis. My objective is to design systems that not only solve real-world problems but also offer beautiful user experiences.
+                    </p>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6 mb-3">
+                            <div class="info-item">
+                                <span class="info-label text-muted d-block">Education</span>
+                                <span class="info-value fw-semibold text-primary-color">M.Sc. in Computer Science</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="info-item">
+                                <span class="info-label text-muted d-block">Current Role</span>
+                                <span class="info-value fw-semibold text-primary-color">Student & Freelance Developer</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="info-item">
+                                <span class="info-label text-muted d-block">Email</span>
+                                <span class="info-value fw-semibold text-primary-color">sathish123@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="info-item">
+                                <span class="info-label text-muted d-block">Location</span>
+                                <span class="info-value fw-semibold text-primary-color">Pudukkottai, Tamil Nadu</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding bg-section-alt">
+        <div class="container">
+            <div class="section-title text-center mb-5 scroll-reveal">
+                <span class="subtitle-badge mb-2">My Expertise</span>
+                <h2 class="display-5 fw-bold">Skills & <span class="gradient-text">Abilities</span></h2>
+                <p class="text-secondary max-w-600 mx-auto">A comprehensive breakdown of my technical capabilities and soft skills acquired through academic learning, personal projects, and professional workshops.</p>
+            </div>
+            
+            <div class="row">
+                <!-- Technical Skills -->
+                <div class="col-lg-6 mb-5 mb-lg-0 scroll-reveal">
+                    <div class="skills-card-container">
+                        <h3 class="h4 fw-bold mb-4 d-flex align-items-center">
+                            <i class="fa-solid fa-code text-gradient me-2"></i> Technical Skills
+                        </h3>
+                        <div class="skills-list d-flex flex-column gap-3">
+                            <div class="skill-progress-item">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="skill-name">HTML5 & CSS3</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="progress-bar-wrapper">
+                                    <div class="progress-bar-fill" data-width="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-item">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="skill-name">JavaScript & ES6</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="progress-bar-wrapper">
+                                    <div class="progress-bar-fill" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-item">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="skill-name">React.js</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="progress-bar-wrapper">
+                                    <div class="progress-bar-fill" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-item">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="skill-name">Bootstrap</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="progress-bar-wrapper">
+                                    <div class="progress-bar-fill" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-item">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="skill-name">Python & PySpark</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="progress-bar-wrapper">
+                                    <div class="progress-bar-fill" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-item">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="skill-name">Java</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="progress-bar-wrapper">
+                                    <div class="progress-bar-fill" data-width="75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-item">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="skill-name">SQL (MySQL & PostgreSQL)</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="progress-bar-wrapper">
+                                    <div class="progress-bar-fill" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-item">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="skill-name">Big Data Analytics</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="progress-bar-wrapper">
+                                    <div class="progress-bar-fill" data-width="70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-item">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="skill-name">Git & GitHub</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="progress-bar-wrapper">
+                                    <div class="progress-bar-fill" data-width="90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Soft Skills -->
+                <div class="col-lg-6 scroll-reveal">
+                    <div class="skills-card-container h-100">
+                        <h3 class="h4 fw-bold mb-4 d-flex align-items-center">
+                            <i class="fa-solid fa-heart text-gradient me-2"></i> Soft Skills
+                        </h3>
+                        <div class="row g-4">
+                            <div class="col-sm-6 col-12">
+                                <div class="soft-skill-card">
+                                    <div class="soft-skill-icon">
+                                        <i class="fa-solid fa-comments"></i>
+                                    </div>
+                                    <h4 class="h5 fw-semibold mb-2">Communication</h4>
+                                    <p class="small text-secondary mb-0">Expressing technical concepts clearly and collaborating efficiently.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <div class="soft-skill-card">
+                                    <div class="soft-skill-icon">
+                                        <i class="fa-solid fa-puzzle-piece"></i>
+                                    </div>
+                                    <h4 class="h5 fw-semibold mb-2">Problem Solving</h4>
+                                    <p class="small text-secondary mb-0">Analyzing errors, debugging code, and resolving data anomalies systematically.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <div class="soft-skill-card">
+                                    <div class="soft-skill-icon">
+                                        <i class="fa-solid fa-users"></i>
+                                    </div>
+                                    <h4 class="h5 fw-semibold mb-2">Teamwork</h4>
+                                    <p class="small text-secondary mb-0">Working cohesively with peers using project management boards and version control.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <div class="soft-skill-card">
+                                    <div class="soft-skill-icon">
+                                        <i class="fa-solid fa-award"></i>
+                                    </div>
+                                    <h4 class="h5 fw-semibold mb-2">Leadership</h4>
+                                    <p class="small text-secondary mb-0">Guiding team members and coordinating tasks in college hackathons.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="soft-skill-card d-flex align-items-center gap-3 py-3">
+                                    <div class="soft-skill-icon flex-shrink-0 mb-0">
+                                        <i class="fa-solid fa-clock"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="h5 fw-semibold mb-1">Time Management</h4>
+                                        <p class="small text-secondary mb-0">Organizing sprint tasks, meeting project deadlines, and maintaining strict schedules.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="section-title text-center mb-5 scroll-reveal">
+                <span class="subtitle-badge mb-2">Portfolio</span>
+                <h2 class="display-5 fw-bold">Recent <span class="gradient-text">Projects</span></h2>
+                <p class="text-secondary max-w-600 mx-auto">Explore some of my projects across front-end web development, dashboard visualization, and data analytics.</p>
+            </div>
+            
+            <!-- Project Filters -->
+            <div class="d-flex justify-content-center mb-5 scroll-reveal">
+                <div class="filter-btn-group">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Dev</button>
+                    <button class="filter-btn" data-filter="data">Data Analytics</button>
+                </div>
+            </div>
+            
+            <div class="row g-4" id="projectsGrid">
+                <!-- Project 1: Student Management System -->
+                <div class="col-md-6 col-lg-4 project-item scroll-reveal" data-category="web">
+                    <div class="project-card h-100">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-web.jpg" alt="Student Management System" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com" target="_blank" rel="noopener" class="project-icon-link" aria-label="GitHub Link">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="https://example.com" target="_blank" rel="noopener" class="project-icon-link" aria-label="Live Demo Link">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-category-badge mb-2">Web Application</div>
+                            <h3 class="h5 project-title fw-bold mb-2">Student Management System</h3>
+                            <p class="project-desc text-secondary">A fully-featured platform enabling administrators to track courses, register students, and log grade files dynamically.</p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Bootstrap</span>
+                                <span class="tag">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2: E-Commerce Website -->
+                <div class="col-md-6 col-lg-4 project-item scroll-reveal" data-category="web">
+                    <div class="project-card h-100">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-web.jpg" alt="E-Commerce Website" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com" target="_blank" rel="noopener" class="project-icon-link" aria-label="GitHub Link">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="https://example.com" target="_blank" rel="noopener" class="project-icon-link" aria-label="Live Demo Link">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-category-badge mb-2">Web Application</div>
+                            <h3 class="h5 project-title fw-bold mb-2">E-Commerce Website</h3>
+                            <p class="project-desc text-secondary">A responsive e-commerce storefront with local storage cart features, products search, categories filtering, and elegant styling.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3: Big Data Analytics Dashboard -->
+                <div class="col-md-6 col-lg-4 project-item scroll-reveal" data-category="data">
+                    <div class="project-card h-100">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-data.jpg" alt="Big Data Analytics Dashboard" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com" target="_blank" rel="noopener" class="project-icon-link" aria-label="GitHub Link">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="https://example.com" target="_blank" rel="noopener" class="project-icon-link" aria-label="Live Demo Link">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-category-badge mb-2">Data Science</div>
+                            <h3 class="h5 project-title fw-bold mb-2">Big Data Analytics Dashboard</h3>
+                            <p class="project-desc text-secondary">Interactive Python dashboard processing data records with Apache Spark, displaying charts, trend estimations, and distribution metrics.</p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Big Data</span>
+                                <span class="tag">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4: Weather App -->
+                <div class="col-md-6 col-lg-4 project-item scroll-reveal" data-category="web">
+                    <div class="project-card h-100">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project-weather.jpg" alt="Weather App" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com" target="_blank" rel="noopener" class="project-icon-link" aria-label="GitHub Link">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="https://example.com" target="_blank" rel="noopener" class="project-icon-link" aria-label="Live Demo Link">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-category-badge mb-2">Web Application</div>
+                            <h3 class="h5 project-title fw-bold mb-2">Weather Forecast App</h3>
+                            <p class="project-desc text-secondary">A stylish weather dashboard using Geolocation and OpenWeather APIs to render multi-day forecasting and air index values.</p>
+                            <div class="project-tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">APIs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5: Portfolio Website -->
+                <div class="col-md-6 col-lg-4 project-item scroll-reveal" data-category="web">
+                    <div class="project-card h-100">
+                        <div class="project-img-wrapper">
+                            <img src="assets/profile.jpg" alt="Portfolio Website" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com" target="_blank" rel="noopener" class="project-icon-link" aria-label="GitHub Link">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="https://example.com" target="_blank" rel="noopener" class="project-icon-link" aria-label="Live Demo Link">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-category-badge mb-2">Web Application</div>
+                            <h3 class="h5 project-title fw-bold mb-2">Personal Portfolio</h3>
+                            <p class="project-desc text-secondary">This website! A highly polished responsive platform demonstrating my skills, academic achievements, and certifications.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Experience (Timeline) Section -->
+    <section id="education" class="section-padding bg-section-alt">
+        <div class="container">
+            <div class="section-title text-center mb-5 scroll-reveal">
+                <span class="subtitle-badge mb-2">My Journey</span>
+                <h2 class="display-5 fw-bold">Education & <span class="gradient-text">Experience</span></h2>
+                <p class="text-secondary max-w-600 mx-auto">A timeline summary of my academic history, professional internships, freelance contracts, and workshops.</p>
+            </div>
+            
+            <div class="row">
+                <!-- Education Timeline -->
+                <div class="col-lg-6 mb-5 mb-lg-0 scroll-reveal">
+                    <h3 class="h4 fw-bold mb-4 text-center text-lg-start d-flex align-items-center justify-content-center justify-content-lg-start">
+                        <i class="fa-solid fa-graduation-cap text-gradient me-2"></i> Education
+                    </h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2025 - 2027</div>
+                            <h4 class="h5 timeline-title fw-semibold">M.Sc. in Computer Science</h4>
+                            <p class="timeline-subtitle text-muted">Government Arts College, Pudukkottai</p>
+                            <p class="timeline-desc text-secondary mb-0">Specializing in Software Engineering, Advanced Database Systems, and Data Analysis. Active member of Computer Science Association.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2021 - 2023</div>
+                            <h4 class="h5 timeline-title fw-semibold">Associate Degree in Mathematics</h4>
+                            <p class="timeline-subtitle text-muted">City Science Academy</p>
+                            <p class="timeline-desc text-secondary mb-0">Graduated with Honors. Core coursework covered Linear Algebra, Calculus, Statistics, and introductory programming scripts.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Experience Timeline -->
+                <div class="col-lg-6 scroll-reveal">
+                    <h3 class="h4 fw-bold mb-4 text-center text-lg-start d-flex align-items-center justify-content-center justify-content-lg-start">
+                        <i class="fa-solid fa-briefcase text-gradient me-2"></i> Professional Experience
+                    </h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Summer 2025 (3 Months)</div>
+                            <h4 class="h5 timeline-title fw-semibold">Web Developer Intern</h4>
+                            <p class="timeline-subtitle text-muted">TechCorp Industries</p>
+                            <p class="timeline-desc text-secondary mb-0">Collaborated with team developers using Git, created user panels using React.js, and improved loading times of database queries by 15%.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2024 - Present</div>
+                            <h4 class="h5 timeline-title fw-semibold">Freelance Data Analyst</h4>
+                            <p class="timeline-subtitle text-muted">Remote Client Operations</p>
+                            <p class="timeline-desc text-secondary mb-0">Cleaned and processed sales data using Python Pandas, designed local PostgreSQL databases, and delivered analytical reports via Jupyter scripts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates & Achievements Section -->
+    <section id="certificates" class="section-padding">
+        <div class="container">
+            <div class="section-title text-center mb-5 scroll-reveal">
+                <span class="subtitle-badge mb-2">Qualifications</span>
+                <h2 class="display-5 fw-bold">Certificates & <span class="gradient-text">Achievements</span></h2>
+                <p class="text-secondary max-w-600 mx-auto">Selected certificates and awards received through online learning platforms, workshops, and coding challenges.</p>
+            </div>
+            
+            <div class="row g-4 mb-5">
+                <!-- Certificate 1 -->
+                <div class="col-md-6 col-lg-4 scroll-reveal">
+                    <div class="certificate-card h-100">
+                        <div class="cert-icon-box">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-2">React Web Developer Certification</h4>
+                        <p class="text-muted small mb-2">Issued by Meta / Coursera (2025)</p>
+                        <p class="text-secondary small mb-0">Rigorous coursework testing React lifecycle components, hooks, state management with Redux, and responsive interface layout systems.</p>
+                    </div>
+                </div>
+                
+                <!-- Certificate 2 -->
+                <div class="col-md-6 col-lg-4 scroll-reveal">
+                    <div class="certificate-card h-100">
+                        <div class="cert-icon-box">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-2">Big Data & Cloud Analytics Course</h4>
+                        <p class="text-muted small mb-2">Issued by Google Cloud Academy (2024)</p>
+                        <p class="text-secondary small mb-0">Mastered queries over huge datasets using Google BigQuery, set up Apache Spark tasks, and analyzed web logs dynamically on cloud systems.</p>
+                    </div>
+                </div>
+                
+                <!-- Certificate 3 -->
+                <div class="col-md-6 col-lg-4 scroll-reveal">
+                    <div class="certificate-card h-100">
+                        <div class="cert-icon-box">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-2">Python for Data Analysis Program</h4>
+                        <p class="text-muted small mb-2">Issued by University of Michigan / Coursera (2024)</p>
+                        <p class="text-secondary small mb-0">Covered libraries like Pandas, NumPy, Matplotlib, and scikit-learn for handling tabular databases, plotting data trends, and regression tests.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Achievements Box -->
+            <div class="achievements-box p-4 p-md-5 scroll-reveal">
+                <h3 class="h4 fw-bold mb-4 d-flex align-items-center">
+                    <i class="fa-solid fa-trophy text-warning me-2"></i> Key Achievements
+                </h3>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="achievement-item d-flex gap-3">
+                            <div class="achievement-num text-gradient fw-bold">01</div>
+                            <div>
+                                <h4 class="h6 fw-semibold mb-1">Winner - City Tech Hackathon 2025</h4>
+                                <p class="small text-secondary mb-0">Led a team of 4 to design a smart recycling tracker application using React and Firebase in a 36-hour sprint competition.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="achievement-item d-flex gap-3">
+                            <div class="achievement-num text-gradient fw-bold">02</div>
+                            <div>
+                                <h4 class="h6 fw-semibold mb-1">1st Place - University Coding Challenge</h4>
+                                <p class="small text-secondary mb-0">Ranked #1 out of 150+ student participants in algorithmic problem-solving tasks involving Java and Python data structures.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="achievement-item d-flex gap-3">
+                            <div class="achievement-num text-gradient fw-bold">03</div>
+                            <div>
+                                <h4 class="h6 fw-semibold mb-1">Dean's Honor List (2023 - 2026)</h4>
+                                <p class="small text-secondary mb-0">Maintained a consecutive term GPA above 3.8/4.0, receiving academic scholarships throughout undergraduate semesters.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="achievement-item d-flex gap-3">
+                            <div class="achievement-num text-gradient fw-bold">04</div>
+                            <div>
+                                <h4 class="h6 fw-semibold mb-1">Certified Scrum Master Workshop</h4>
+                                <p class="small text-secondary mb-0">Completed a hands-on agile framework workshop, gaining training in running sprints, user stories, and retrospective meetings.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-section-alt">
+        <div class="container">
+            <div class="section-title text-center mb-5 scroll-reveal">
+                <span class="subtitle-badge mb-2">Connect</span>
+                <h2 class="display-5 fw-bold">Contact <span class="gradient-text">Me</span></h2>
+                <p class="text-secondary max-w-600 mx-auto">Have a project in mind, an opportunity, or just want to say hi? Fill out the form or reach out directly.</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Contact info cards -->
+                <div class="col-lg-5 scroll-reveal">
+                    <div class="contact-info-container d-flex flex-column gap-4 h-100">
+                        <div class="contact-info-card d-flex gap-3 align-items-center">
+                            <div class="contact-card-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="h6 text-muted mb-1">Email Me</h4>
+                                <span class="fw-semibold text-primary-color">sathish123@gmail.com</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-card d-flex gap-3 align-items-center">
+                            <div class="contact-card-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="h6 text-muted mb-1">Call Me</h4>
+                                <span class="fw-semibold text-primary-color">+91 76396 58311</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-card d-flex gap-3 align-items-center">
+                            <div class="contact-card-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="h6 text-muted mb-1">Location</h4>
+                                <span class="fw-semibold text-primary-color">Pudukkottai, Tamil Nadu, India</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Map card wrapper -->
+                        <div class="contact-map-card flex-grow-1 overflow-hidden rounded-4">
+                            <!-- Styled iframe map centered at Pudukkottai, Tamil Nadu -->
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62707.96225345719!2d78.78848416801944!3d10.38202517865241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0065be9fca0c5d%3A0xe5434190c1f6c44a!2sPudukkottai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0; min-height: 200px;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Pudukkottai Map"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact form -->
+                <div class="col-lg-7 scroll-reveal">
+                    <div class="contact-form-container">
+                        <form id="contactForm" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating-custom">
+                                        <input type="text" class="form-control-custom" id="formName" placeholder="Your Name" required>
+                                        <label for="formName" class="form-label-custom">Your Name</label>
+                                        <div class="invalid-feedback-custom">Please enter your name.</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating-custom">
+                                        <input type="email" class="form-control-custom" id="formEmail" placeholder="Your Email" required>
+                                        <label for="formEmail" class="form-label-custom">Your Email</label>
+                                        <div class="invalid-feedback-custom">Please enter a valid email address.</div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating-custom">
+                                        <input type="text" class="form-control-custom" id="formSubject" placeholder="Subject" required>
+                                        <label for="formSubject" class="form-label-custom">Subject</label>
+                                        <div class="invalid-feedback-custom">Please specify a subject.</div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating-custom">
+                                        <textarea class="form-control-custom" id="formMessage" rows="5" placeholder="Your Message" required style="height: 150px;"></textarea>
+                                        <label for="formMessage" class="form-label-custom">Your Message</label>
+                                        <div class="invalid-feedback-custom">Please write a message.</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-end">
+                                    <button type="submit" class="btn btn-gradient btn-lg py-3 px-5">
+                                        <i class="fa-solid fa-paper-plane me-2"></i>Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        
+                        <!-- Success Alerts -->
+                        <div id="formFeedback" class="mt-4 alert alert-success d-none alert-dismissible fade show" role="alert">
+                            <i class="fa-solid fa-circle-check me-2"></i>
+                            <strong>Success!</strong> Your message has been sent. Sathish will reach out to you shortly.
+                            <button type="button" class="btn-close" id="feedbackClose" aria-label="Close"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section py-5">
+        <div class="container text-center">
+            <div class="footer-links mb-4 d-flex justify-content-center flex-wrap gap-4">
+                <a href="#hero" class="footer-link">Home</a>
+                <a href="#about" class="footer-link">About</a>
+                <a href="#skills" class="footer-link">Skills</a>
+                <a href="#projects" class="footer-link">Projects</a>
+                <a href="#education" class="footer-link">Education & Exp</a>
+                <a href="#certificates" class="footer-link">Certificates</a>
+                <a href="#contact" class="footer-link">Contact</a>
+            </div>
+            
+            <div class="footer-social-links mb-4 d-flex justify-content-center gap-3">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:sathish123@gmail.com" class="social-icon" aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+            
+            <p class="copyright text-muted mb-0 small">&copy; 2026 Sathish. All rights reserved. Designed with Bootstrap 5 and Vanilla CSS.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top-btn" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
